@@ -1,0 +1,128 @@
+/*=================Cabeçalho Principal=================*/
+#menu-principal{
+    height: 90px; max-height: 90px;
+    width: 100%; max-width: none;
+    background-color: rgb(50,50,62);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 1px 5px #ffb418;
+    flex-grow: 1;
+}
+#logo{
+    margin-top: 3px; margin-left: 5px; margin-right: 5px;
+}
+#DivPesquisa{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+#Pesquisa{
+    border: 2px white solid;
+    width: 500px; 
+    height: 35px;
+    background-color: #ffb418;
+    color: white;
+    border-radius: 5px;
+}
+#Pesquisa::placeholder{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+}
+#BoxDireita{
+    display: flex;
+    margin-left: 5px; margin-right: 5px;
+}
+.DivItensDireita{ 
+    margin-left: 5px; margin-right: 5px; margin-top: 15px; margin-bottom: 15px;
+    background-color: #ffb418;
+    border-radius: 10px;
+    height: 55px;
+    position: relative;
+    align-self: center;
+    justify-content: flex-start;
+}
+.DivItensDireita a{
+    display: flex;
+    text-decoration: none;
+}
+.DivItensDireita:hover{
+    box-shadow: 0px 0px 10px grey;
+    transition: box-shadow 200ms;
+}
+.divImgMenuDireita{
+    width: 55px;
+    margin-top: 2px; margin-bottom: 2.5px; margin-left: 2.5px;
+}
+.imgMenuDireita{
+    height: 50px;
+    margin-left: 3px;
+}
+#textoUsuario{
+    line-height: 1;
+    text-align: center;
+    margin-top: 13px; margin-bottom: 15px; margin-left: 3px; margin-right: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(50,50,62);
+}
+#textoCarrinho{
+    line-height: 1;
+    text-align: center;
+    margin-top: 22px; margin-bottom: 15px; margin-left: 5px; margin-right: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(50,50,62);
+}
+/*=================Menu Secundario=================*/
+#div-menu-secundario{
+    display: flex;
+    justify-content: center;
+}
+#menu-secundario {
+    display: flex;
+    background-color: rgb(52,52,64,0.8);
+    width: 80%;
+    height: 50px;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;   
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 1px 5px #ffb418 inset;
+}
+.menu-secundario-itens{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #ffb418;
+}
+/****************************Rodapé****************************/
+footer{
+    display: flex;
+    height: 150px; width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(50,50,62);
+    box-shadow: 0px -2px 5px #ffb418;
+    text-align: left;
+  
+}
+footer #logo{
+    margin-left: 5px;
+}
+#atalhos{
+    display: flex;
+}
+.lista-nao-ordenada{
+    border-left: #ffb418 2px dotted;
+    margin-right: 130px;
+}
+.textoTitulo{
+    color:#ffb418;
+    font-size: large;
+    margin-bottom: 15px;
+}
+.textoAtalho{
+    color: white;
+}

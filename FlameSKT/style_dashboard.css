@@ -1,0 +1,142 @@
+/****************************Main****************************/
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex:1;
+    text-align: left;
+}
+
+#div-conteudo{  
+    width: 75%; height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: #ffb418 2px solid;
+    border-radius: 10px;
+    margin: 10px; padding: 20px;
+    color: white;
+}
+#divFlex{
+    display: flex;
+}
+#divEsq{
+    width: 20%; height: 100px;
+    border:#ffb418 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+}
+#divEsq h2, #divDir h2{
+    margin-top: 0;
+}
+.linksEsq{
+    margin: 10px 0px;
+}
+#divEsq a{
+    color: white;
+}
+#divEsq a:hover{
+    color: #ffb418;
+}
+#divDir{
+    width: 75%; height: auto;
+    padding: 10px; margin-left: 20px;
+    display: block;
+}
+#divDir h2{
+    border-bottom: #ffb418 2px solid;
+    padding-bottom: 10px;
+    
+}
+.divProdutos{
+    display: flex;
+    border-bottom:#ffb418 1px dotted;
+    justify-content: space-between;
+    width: 100%;
+}
+.divNumProd{
+    display: flex;
+    align-items: center;    
+} 
+.divNumProd span{
+    background-color: #ffb418;
+    border: 5px #ffb418 solid;
+    border-radius: 10px;
+    color: #32323e;
+}
+.nomeQtd{
+    display: flex;
+    flex-direction: column;
+}
+.nomeQtd div{
+    border-top: 2px #ffb418 solid;
+}
+.imagemProd{
+    background-color: #ffb418;
+    width: min-content; height: min-content;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+.spanQtdEst{
+    font-size: 14px;
+}
+.numeroqtd{
+    width: 50px;
+    font-size: 18px;
+    background-color: #ffb418;
+    border:#ffb418 1px solid;
+    border-radius: 10px;
+    color: #32323e;
+    text-align: center;
+    margin-top: 10px; 
+}
+.produto-nome{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    color: white;
+    width: 60%;
+}
+.remover-produto{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 13%; 
+}
+.remover-produto .botaoEditar{
+    width: 80px; height: 30px;
+    background-color: #ffb418;
+    border: #ffb418 5px solid;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #32323e;
+}
+.remover-produto .botaoEditar:hover{
+    box-shadow: 0px 0px 10px grey;
+    transition: 200ms;
+}
+.produto-preco{
+    display: flex;
+    padding: 10px; padding-right: 50px; padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    width: 5%;
+}
+a:hover{
+    color: rgb(203, 203, 203);
+}
+.botaoStts{
+    background: #ffb418;
+    width: 100%;
+    color: #32323e;
+    font-size: 1.1em;
+    border: #ffb418 1px solid;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}

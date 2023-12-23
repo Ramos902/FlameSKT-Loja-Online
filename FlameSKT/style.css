@@ -1,0 +1,106 @@
+
+/*=================Conteudo Site c/ Produtos=================*/
+#main{
+    display: flex;
+    justify-content: center;
+    width: 100%; height: max-content;
+    max-width: 100%;
+    flex:1; 
+}
+#div-conteudo{
+    display: flex;
+    width: 100%; height: auto;
+    max-width: 1068px;
+    padding: 10px;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+.div-produtos{
+    width: fit-content; max-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #ffb418;  
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5%;
+    padding: 10px; padding-bottom: 20px; padding-top: 20px;
+    margin-bottom: 12px; margin-right: 9px; margin-left: 9px;
+}
+.div-produtos:hover{
+    box-shadow: 0px 0px 15px grey;
+    transition: box-shadow 200ms;
+}
+.produtos-linha{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 225px; height: min-content;
+    align-items: center;
+}
+.ImagemProduto{
+    background-color: #ffb418;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    height: 200px; width: 200px;
+}
+.NomeProduto{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.PrecoProduto{
+    width: 210px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.preco{
+    font-size: x-large;
+    text-transform: none;
+}
+.precoX{
+    color: #ffb418;
+    text-transform: none;
+}
+.frete{
+    color:#13db74;
+    text-transform: none;
+}
+.divComprar{
+    height: 120px; max-width: 200px ;
+    display: flex;
+    flex-direction: column;
+}
+.BotaoCarrinho{
+    display: flex;
+    height: 50px; max-width: 100%;
+    color: white; 
+    font-family: 'Montserrat', sans-serif;
+    border: 2px white solid;
+    background-color: #ffb418;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.BotaoComprar{
+    display: flex;
+    height: 50px; width: 100%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px white solid;
+    background-color: #ffb418;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    text-transform: uppercase;
+    text-align: center;
+}
+

@@ -1,0 +1,187 @@
+/*=================Conteudo Compra=================*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    text-align: left;
+}
+#divCarrinho{
+    width: 75%; height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: #ffb418 1px solid;
+    border-radius: 10px;
+    margin-top: 20px; margin-bottom: 20px;
+    padding-left: 10px; padding-right: 10px;
+}
+#divEsqDir{
+    display: flex;
+}
+/*div-Esquerda*/
+#divEsquerda{
+    width: 70%;
+    height: auto;
+}
+#h1Carrinho{
+    border-bottom: #ffb418 3px solid;
+    color: white;
+}
+.nomeQtd{
+    display: flex;
+    flex-direction: column;
+}
+.divProdutos{
+    display: flex;
+    border-bottom:#ffb418 1px dotted;
+    justify-content: space-between;
+}
+.imagemProd{
+    background-color: #ffb418;
+    width: min-content; height: min-content;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+.numeroqtd{
+    width: 60px;
+    font-size: 18px;
+    background-color: #ffb418;
+    border:#ffb418 1px solid;
+    border-radius: 12%;
+    color: #32323e;
+    text-align: center;
+    margin-top: 10px;
+}
+.produto-nome{
+    display: flex;
+    padding: 10px;
+    justify-content:flex-start;
+    text-align: left;
+    align-items: center;
+    color: white;
+}
+.produto-preco{
+    display: flex;
+    padding: 10px; padding-right: 50px; padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+/*Div-Direita*/
+.divDireita{
+    width: 30%; 
+    border: #ffb418 2px solid;
+    border-radius: 10px;
+    margin-top: 10px; margin-bottom: 10px; margin-left: 10px;
+    padding-left: 10px; padding-right: 10px;
+}
+#divResumoPedido{
+    display: flex;
+    height: auto;
+    align-items: center; justify-content: center;
+}
+.h2Titulos{  
+    color: white;
+    font-size: x-large;
+    border-radius: 10px;
+}
+#divValores{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 80px;
+    border-bottom:#ffb418 2px solid;
+}
+#divValorTotal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    border-bottom:#ffb418 2px solid;
+}
+#valorTotal{
+    color: #ffb418;
+    font-size: x-large;   
+}
+.valores{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#divBotaoContinuar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+#botaoContinuar{
+    background-color: #ffb418;
+    color:#000000;
+    font-size: x-large;
+    border:#ffb418 5px solid;
+    border-radius: 10px;
+}
+#botaoContinuar:hover{
+    box-shadow: 0px 0px 10px grey;
+    transition: box-shadow 200ms;
+}
+
+#formEndereco{
+    color: white;
+}
+.itensEndereco{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+.itensEndereco input{
+    background-color: #ffb418;
+    color:#32323e;
+    border: #ffb418 1px solid;
+}
+.itensEndereco #cep{
+    width: 150px;
+}
+.itensEndereco #endereco{
+    width: 250px;
+}
+.itensEndereco #number{
+    width: 80px;
+}
+.divBotaoConcluido{
+    max-width: auto; height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom:#ffb418 2px solid;
+    padding-bottom: 10px; padding-top: 10px;
+}
+.botaoConcluido{
+    background-color: #ffb418;
+    color: #000000;
+    border: #ffb418 1px solid;
+    border-radius: 10px;
+    margin-top: 5px;
+    width: 100px;
+    height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+}
+.botaoConcluido:hover{
+    box-shadow: 0px 0px 10px grey;
+    transition: box-shadow 200ms;
+}
+.itensEndereco input::placeholder{color: #000000;}
+.itensEndereco input{
+    color: #000000;
+    font-size: large;
+}
+#divMetodoPagamento form div label{
+    color: #fff;
+}
+#divEntrega{
+    border-top: #ffb418 2px solid;
+}

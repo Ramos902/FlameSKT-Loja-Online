@@ -1,0 +1,114 @@
+/****************************Main****************************/
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex:1;
+}
+#div-conteudo{  
+    width: 75%; height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: #ffb418 2px solid;
+    border-radius: 10px;
+    margin: 10px; padding: 20px;
+    color: white;
+}
+
+#divFlex{
+    display: flex;
+}
+/*Conteudo Esquerdo*/
+#boxEsquerda{
+    width: 20%; height:min-content;
+    border: #ffb418 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+#TituloVisual h2{
+    margin-top: 0px;    
+}
+.links{
+    list-style: none;
+    border-radius: 5px;
+    width:fit-content;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.links a{
+    color: #fff;
+}
+.links a:hover{
+    color: #ffb418;
+    transition: 350ms;
+}
+/*Conteudo Direito*/
+.boxDireita{
+    width: 75%; height: auto;
+    border: #ffb418 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 2%;
+}     
+#divEsquerda{
+    width: 70%;
+}
+#divDirImg{
+    width: 30%;
+}
+#divInputs{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+#divInputs textarea{
+    height: 50px;   
+}
+#divInputs label{
+    color: #ffffff;
+}
+#divCategoria{
+    display: flex;
+    width: 250px;
+}
+#divOpcoesCategoria{
+    border-left:#ffb418 2px dotted;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+#imagemProd{
+    margin-top: 20px; margin-bottom: 20px;
+}
+#imagemProd label{
+    margin-top: 20px; margin-bottom: 10px;
+    border: #ffb418 1px solid;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+#imagemProd input{
+    display: none;
+}
+#enviar{
+    border: #ffb418 1px solid;
+    border-radius: 10px;
+    background-color:#ffb418;
+    width: 150px; height: 40px;
+    font-size: larger;
+    cursor: pointer;
+    color: rgb(50,50,62);
+    font-family: 'Montserrat', sans-serif;
+}
+#boxDireitaEditar{
+    display: flex;
+    width: 20;
+    justify-content: space-between;
+}
+#ImagemProduto{
+    background-color: #ffb418;
+    border-radius: 3%;
+    display: flex;
+    justify-content: center;
+    height: 200px; width: 200px;
+}

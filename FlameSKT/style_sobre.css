@@ -1,0 +1,27 @@
+/****************************Main****************************/
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#div-conteudo{
+    width: 75%; height: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: #ffb418 2px solid;
+    margin: 10px; padding: 20px;
+    color: white;
+}
+#divTextosFlex{
+    display: flex;
+    justify-content: space-between;
+}
+.divTextos{
+    margin:0px 5px;
+}
+h2, h1{
+    color: #ffb418;
+}
+.divTextos{
+    width: 100%; height: auto;
+}

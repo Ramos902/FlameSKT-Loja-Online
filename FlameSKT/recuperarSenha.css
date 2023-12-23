@@ -1,0 +1,148 @@
+/*==================Conteudo==================*/
+main{
+    height: auto; width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+/*login*/
+#divCadastro{
+    width: 25%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border:#ffb418 1px solid;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px; 
+    margin-top: 25px; margin-bottom: 25px;
+    color: #fff;
+}
+#divLogin{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.divForm{
+    border:#ffb418 1px solid;
+    border-radius: 10px;
+    padding:10px;
+    height: max-content;
+}
+.divForm form a{
+    
+    color: #ffb418;
+    font-size: small;
+    margin-bottom: 10px;
+    width: auto;
+}
+.buttonSubmit{
+    width: 100px;
+    height: 25px;
+    color: rgb(0, 0, 0);
+    background-color: #ffb418;
+    border: 1px solid #ffb418;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.buttonSubmit:hover{
+    background-color: black;
+    color: #fff;
+
+    transition: 400ms;
+    cursor: pointer;
+}
+
+/*Inputs*/
+.formClass{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.inputBox{
+    position: relative;
+    width: auto;
+}
+.inputBox#inputSexo{
+    height: 40px;
+    padding-top: 20px;
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    justify-content: flex-start;
+}
+.inputBox#inputSexo input{
+    width: auto;
+    margin: 0;
+}
+.inputBox input{
+    width: 70%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    transition: 250ms;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    display: auto;
+    color: #000000;
+    transform: translate(10px,-10px);
+    font-size: 0.7em;
+    padding: 0px 10px;
+    margin-top: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid #ffb418;
+    background-color: #ffb418;
+    letter-spacing: 0.2em;
+    border-radius: 2px;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid #ffb418;
+}
+.inputBox input#nasc:valid,
+.inputBox input#nasc:focus {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.errorPhp{
+    color: #ffb418;
+    font-size: 0.75em;
+}
+
+/****************************Rodapé****************************/
+footer{
+    display: flex;
+    height: 150px; width: 100%;
+    align-items: center;
+    justify-content: right;
+    background-color: rgb(50,50,62);
+    box-shadow: 0px -2px 5px #ffb418;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+footer #logo{
+    margin-right: 40px;
+}
+.textoAtalho{
+    color: white;
+}

@@ -1,0 +1,72 @@
+main{
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divConteudo{
+    width: 40%; height: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: #ffb418 2px solid;
+    margin: 10px; padding: 20px;
+    color: white;
+}
+#divExit{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#divExit input{
+    width: 140px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #ffb418;
+    border: 1px solid #ffb418;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+#divExit a{
+    width: 140px;
+    height: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #ffb418;
+    border: 1px solid #ffb418;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    padding: 5px 6px;
+}
+#divExit input:hover{
+    background-color: black;
+    color: #fff;
+    transition: 400ms;
+    cursor: pointer;
+}
+#divPainelControl{
+    height: 125px;
+    border:#ffb418 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    margin-top: 20px;
+}
+#divPainelControl span a{
+    background-color: #ffb418;
+    color: #000;
+    border:#ffb418 5px solid;
+    border-radius: 10px;
+}
+#divPainelControl span a:hover{
+    box-shadow: 0px 0px 10px grey;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
