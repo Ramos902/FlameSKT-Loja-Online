@@ -3,17 +3,18 @@
 #main{
     display: flex;
     justify-content: center;
-    width: 100%; height: max-content;
+    width: 100%;
     max-width: 100%;
     flex:1; 
+    margin: 20px 0px;
 }
 #div-conteudo{
-    display: flex;
-    width: 100%; height: auto;
-    max-width: 1068px;
-    padding: 10px;
-    justify-content: flex-start;
-    flex-wrap:wrap;
+    width: 80%; height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-rows: 400px;
+    gap: 20px;
+    justify-content: center;
 }
 .div-produtos{
     width: fit-content; max-height: 400px;
@@ -23,7 +24,7 @@
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5%;
     padding: 10px; padding-bottom: 20px; padding-top: 20px;
-    margin-bottom: 12px; margin-right: 9px; margin-left: 9px;
+    
 }
 .div-produtos:hover{
     box-shadow: 0px 0px 15px grey;
