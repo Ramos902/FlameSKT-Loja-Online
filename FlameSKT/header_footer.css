@@ -1,95 +1,129 @@
+
 /*=================Cabeçalho Principal=================*/
-#menu-principal{
-    height: 90px; max-height: 90px;
-    width: 100%; max-width: none;
-    background-color: rgb(50,50,62);
-    display: flex;
+#menu-principal {
+    height: 90px;
+    width: 100%;
+    background-color: rgb(50, 50, 62);
+    display: grid;
+    grid-template-areas:
+        'logo searc icon'
+    ;
     justify-content: space-between;
     box-shadow: 0px 1px 5px #ffb418;
     flex-grow: 1;
 }
-#logo{
-    margin-top: 3px; margin-left: 5px; margin-right: 5px;
+
+#logo {
+    grid-area: logo;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-#DivPesquisa{
+
+#DivPesquisa {
+    grid-area: searc;
     margin-top: 25px;
     margin-bottom: 20px;
 }
-#Pesquisa{
+
+#Pesquisa {
+    
     border: 2px white solid;
-    width: 500px; 
+    width: 100%;
+    min-width: 550px;
     height: 35px;
     background-color: #ffb418;
     color: white;
     border-radius: 5px;
+    
 }
-#Pesquisa::placeholder{
-    color:white;
+
+#Pesquisa::placeholder {
+    color: white;
     font-family: 'Montserrat', sans-serif;
 }
-#BoxDireita{
+
+#BoxDireita {
+    grid-area: icon;
     display: flex;
-    margin-left: 5px; margin-right: 5px;
+    margin: 0px 5px;
+    gap: 10px;
 }
-.DivItensDireita{ 
-    margin-left: 5px; margin-right: 5px; margin-top: 15px; margin-bottom: 15px;
+
+.DivItensDireita { 
+    
+    display: flex;
+    align-self: center;
+    justify-content: center;
     background-color: #ffb418;
     border-radius: 10px;
     height: 55px;
-    position: relative;
-    align-self: center;
-    justify-content: flex-start;
+   
 }
-.DivItensDireita a{
-    display: flex;
-    text-decoration: none;
-}
-.DivItensDireita:hover{
+
+.DivItensDireita:hover {
     box-shadow: 0px 0px 10px grey;
     transition: box-shadow 200ms;
 }
-.divImgMenuDireita{
-    width: 55px;
-    margin-top: 2px; margin-bottom: 2.5px; margin-left: 2.5px;
+
+.DivItensDireita a {
+    display: flex;
+    text-decoration: none;
 }
-.imgMenuDireita{
-    height: 50px;
+
+
+
+.material-icons.md-48 {
+    font-size: 48px;
+    color: rgb(50, 50, 62);
+    margin: 0px 5px;
+    padding-top: 3px;
+}
+
+#textoUsuario {
+    line-height: 1;
+    text-align: center;
+    margin-top: 13px;
+    margin-bottom: 15px;
     margin-left: 3px;
+    margin-right: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(50, 50, 62);
 }
-#textoUsuario{
+
+#textoCarrinho {
     line-height: 1;
     text-align: center;
-    margin-top: 13px; margin-bottom: 15px; margin-left: 3px; margin-right: 5px;
+    margin-top: 22px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
     font-family: 'Montserrat', sans-serif;
-    color: rgb(50,50,62);
+    color: rgb(50, 50, 62);
 }
-#textoCarrinho{
-    line-height: 1;
-    text-align: center;
-    margin-top: 22px; margin-bottom: 15px; margin-left: 5px; margin-right: 5px;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(50,50,62);
-}
+
 /*=================Menu Secundario=================*/
-#div-menu-secundario{
+#div-menu-secundario {
     display: flex;
     justify-content: center;
 }
+
 #menu-secundario {
     display: flex;
-    background-color: rgb(52,52,64,0.8);
+    background-color: rgb(52, 52, 64, 0.8);
     width: 80%;
     height: 50px;
     border-end-start-radius: 10px;
     border-end-end-radius: 10px;
     justify-content: space-evenly;
     align-items: center;
-    list-style: none;   
+    list-style: none;
     padding: 0;
     margin: 0;
     box-shadow: 0px 1px 5px #ffb418 inset;
 }
-.menu-secundario-itens{
+
+.menu-secundario-itens {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: white;
@@ -97,32 +131,97 @@
     text-transform: uppercase;
     text-shadow: 1px 1px 0px #ffb418;
 }
+
 /****************************Rodapé****************************/
-footer{
+footer {
     display: flex;
-    height: 150px; width: 100%;
+    height: 150px;
+    width: 100%;
     align-items: center;
     justify-content: space-around;
-    background-color: rgb(50,50,62);
+    background-color: rgb(50, 50, 62);
     box-shadow: 0px -2px 5px #ffb418;
     text-align: left;
     margin-top: 20px;
 }
-footer #logo{
+
+footer #logo {
     margin-left: 5px;
 }
-#atalhos{
+
+#atalhos {
     display: flex;
+    gap: 10%;
 }
-.lista-nao-ordenada{
+
+.lista-nao-ordenada {
     border-left: #ffb418 2px dotted;
-    margin-right: 130px;
+    margin: 0;
 }
-.textoTitulo{
-    color:#ffb418;
+
+.textoTitulo {
+    color: #ffb418;
     font-size: large;
     margin-bottom: 15px;
 }
-.textoAtalho{
+
+.textoAtalho {
     color: white;
 }
+
+/*Media Queries*/
+
+@media screen and (max-width: 1215px) {
+    .DivItensDireita span:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #menu-principal {
+        height: 200px;
+        grid-template-areas:
+            'logo icon'
+            'searc searc'
+        ;
+    }
+    #DivPesquisa{
+        width: 80%;
+        justify-self: center ;
+    }
+    #Pesquisa{
+        height: 50px;
+        font-size: 1.2em;
+    }
+    .DivItensDireita span:nth-child(2) {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 768px)   {
+    #menu-principal {
+        height: 225px;
+    }
+    #DivPesquisa{
+        width: 90%;
+    }
+    #Pesquisa{
+        height: 50px;
+        font-size: 1.5em;
+    }
+
+    footer{
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    #atalhos {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+        gap: 20px;
+    }
+}
+
+
