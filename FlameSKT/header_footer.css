@@ -21,6 +21,7 @@
 }
 
 #DivPesquisa {
+    width: 40vw;
     grid-area: searc;
     margin-top: 25px;
     margin-bottom: 20px;
@@ -30,7 +31,6 @@
     
     border: 2px white solid;
     width: 100%;
-    min-width: 550px;
     height: 35px;
     background-color: #ffb418;
     color: white;
@@ -171,13 +171,13 @@ footer #logo {
 
 /*Media Queries*/
 
-@media screen and (max-width: 1215px) {
+@media screen and (min-width: 1000px) and (max-width: 1215px) {
     .DivItensDireita span:nth-child(2) {
         display: none;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px)  {
     #menu-principal {
         height: 200px;
         grid-template-areas:
@@ -190,24 +190,21 @@ footer #logo {
         justify-self: center ;
     }
     #Pesquisa{
+        
         height: 50px;
         font-size: 1.2em;
     }
     .DivItensDireita span:nth-child(2) {
-        display: inline;
+        display: flex;
     }
 }
 
-@media screen and (max-width: 768px)   {
+@media screen and (max-width: 768px) {
     #menu-principal {
         height: 225px;
     }
     #DivPesquisa{
         width: 90%;
-    }
-    #Pesquisa{
-        height: 50px;
-        font-size: 1.5em;
     }
 
     footer{
@@ -223,5 +220,17 @@ footer #logo {
         gap: 20px;
     }
 }
+
+@media screen and (max-width: 650px)  {
+
+    #BoxDireita{
+        justify-content: end;
+    }
+    .DivItensDireita span:nth-child(2) {
+        display: none;
+    }
+
+}
+
 
 
