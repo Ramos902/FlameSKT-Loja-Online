@@ -53,6 +53,7 @@ if (isset($_GET['cat'])) {
     <link rel="icon" href="img\site\icon.png">
     <link href="fullsite.css" rel="stylesheet">
     <link href="header_footer.css" rel="stylesheet">
+    <link rel="stylesheet" href="./MediaQueries/header_footer_Media.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>FlameSKT</title>
 </head>
