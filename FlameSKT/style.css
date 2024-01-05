@@ -11,7 +11,7 @@
     width: 80%; height: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-    grid-template-rows: 400px;
+    grid-template-rows: repeat(auto-fit, minmax(250px, auto));;
     gap: 20px;
     justify-content: center;
 }
@@ -21,8 +21,8 @@
     justify-content: space-between;
     border: 2px solid #ffb418;  
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 5%;
-    padding: 10px; padding-bottom: 20px; padding-top: 20px;
+    border-radius: 15px;
+    padding: 10px; 
     
 }
 .div-produtos:hover{
@@ -33,29 +33,29 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    width: 225px; height: min-content;
+    width: auto; height: 100%;
+    max-width: 225px;
     align-items: center;
+    row-gap: 10px;
 }
 .ImagemProduto{
     background-color: #ffb418;
-    border-radius: 3%;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    height: 200px; width: 200px;
+    height: 225px; width: 225px;
 }
 .NomeProduto{
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    margin-left: 15px;
     text-transform: uppercase;
 }
 .PrecoProduto{
-    width: 210px;
+    width: 100%;
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
-    margin-left: 15px;
     text-transform: uppercase;
 }
 .preco{

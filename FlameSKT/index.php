@@ -49,11 +49,18 @@ if (isset($_GET['cat'])) {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link href="style.css" rel="stylesheet">
+    
+    <!-- Css Icon Site -->
     <link rel="icon" href="img\site\icon.png">
+
+    <!-- Css Estilos do Site -->
+    <link href="style.css" rel="stylesheet">
     <link href="fullsite.css" rel="stylesheet">
     <link href="header_footer.css" rel="stylesheet">
+
+    <!-- Css MediaQueries -->
     <link rel="stylesheet" href="./MediaQueries/header_footer_Media.css">
+    <link rel="stylesheet" href="./MediaQueries/index_Media.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>FlameSKT</title>
 </head>
@@ -75,7 +82,7 @@ if (isset($_GET['cat'])) {
                                 <img src="<?= $Produtos['img'] ?>" width="200" height="auto" alt="ImagemProduto">
                             </div>
                             <div class="NomeProduto">
-                                <p><?= $Produtos['titulo'] ?></p>
+                                <span><?= $Produtos['titulo'] ?></span>
                             </div>
                             <div class="PrecoProduto">
                                 <span class="preco">R$<?= number_format((float)$Produtos['preco'], 2, ',', '') ?><br></span>

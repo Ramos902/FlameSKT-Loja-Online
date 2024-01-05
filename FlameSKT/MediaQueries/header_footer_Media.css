@@ -21,7 +21,7 @@
     }
 
     #Pesquisa {
-
+        width: 100%;
         height: 40px;
         font-size: 1.2em;
     }
@@ -64,6 +64,11 @@
 }
 
 @media screen and (max-width: 425px) {
+
+    #Pesquisa {
+        height: 30px;
+        font-size: 1.0em;
+    }
 
     .menu-secundario-itens {
         font-size: medium;

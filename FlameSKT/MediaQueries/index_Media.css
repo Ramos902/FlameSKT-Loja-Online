@@ -1,0 +1,28 @@
+@media screen and (max-width: 650px) {
+    #div-conteudo {
+        grid-template-columns: repeat(auto-fit, minmax(130px, auto));
+        width: 90%;
+    }
+
+    .div-produtos {
+        width: 85%;
+        justify-self: center;
+
+    }
+
+    .produtos-linha span {
+        
+        font-size: 0.8em;
+    }
+
+    .ImagemProduto, .ImagemProduto img {
+        
+        height: auto; width: 100%;
+    }
+}
+@media screen and (max-width: 375px) {
+
+    .produtos-linha span {
+        font-size: 0.7em;
+    }
+}
